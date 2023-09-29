@@ -26,7 +26,7 @@ if __name__ == "__main__":
         print(f"-------- day {day} --------")
         print("name, sellIn, quality")
         for item in items:
-            print("[" + str(items.index(item)) + "]" + str(item))
+            print(f"[{str(items.index(item))}] {str(item)}")
         print("")
         GildedRose(items).sellNthrow_items()
         GildedRose(items).update_quality(days)
