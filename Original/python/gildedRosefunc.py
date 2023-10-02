@@ -1,11 +1,8 @@
-# -*- coding: utf-8 -*-
-
-
 class GildedRose(object):
     def __init__(self, items):
         self.items = items
 
-    def update_quality(self, days): #
+    def update_quality(self, days):  #
         for item in self.items:
             if (
                 item.name != "Aged Brie"
@@ -14,9 +11,8 @@ class GildedRose(object):
                 and item.name != "Sulfuras, Hand of Ragnaros"
             ):
                 item.quality -= 1
-                
+
             elif item.quality < 50:
-                            
                 item.quality += 1
                 if (
                     item.name == "Backstage passes to a TAFKAL80ETC concert"
@@ -57,7 +53,7 @@ class GildedRose(object):
                     print(item)
 
         print("Thrown away:")
-        if thrown != []:
+        if thrown:
             for item in thrown:
                 print(item)
         else:

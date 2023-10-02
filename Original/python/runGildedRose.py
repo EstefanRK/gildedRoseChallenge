@@ -30,3 +30,6 @@ if __name__ == "__main__":
         print("")
         GildedRose(items).sellNthrow_items()
         GildedRose(items).update_quality(days)
+    print(" ")
+    print("---end---")
+    print(" ")
